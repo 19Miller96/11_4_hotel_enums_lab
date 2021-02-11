@@ -22,7 +22,7 @@ public class RoomTest {
     }
 
     @Test
-    public void canAddToGuestList(){
+    public void canAddToGuestsList(){
         room.addToGuestsList(guest);
         assertEquals( 1, room.countGuestsList());
     }
