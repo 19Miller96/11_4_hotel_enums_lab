@@ -30,4 +30,9 @@ public class ConferenceRoomTest {
         assertEquals("Programming", conferenceRoom.getConferenceRoomTopic());
     }
 
+    @Test
+    public void canAddToGuestsList(){
+        conferenceRoom.addToGuestsList(guest);
+        assertEquals( 1, conferenceRoom.countGuestsList());
+    }
 }

@@ -12,7 +12,7 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        bedroom = new Bedroom(3, 101, RoomType.TRIPLE);
+        bedroom = new Bedroom(3, 101, RoomType.TRIPLE, 60);
     }
 
     @Test
@@ -26,6 +26,11 @@ public class BedroomTest {
     }
 
     @Test
+    public void bedroomHasNightlyRate(){
+        assertEquals(60, bedroom.getNightlyRate());
+    }
+
+    @Test
     public void canGetRoomType(){
         assertEquals(RoomType.TRIPLE, bedroom.getRoomType());
     }
@@ -35,4 +40,7 @@ public class BedroomTest {
         bedroom.addToGuestsList(guest);
         assertEquals( 1, bedroom.countGuestsList());
     }
+
+
+
 }

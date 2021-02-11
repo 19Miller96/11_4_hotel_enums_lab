@@ -7,10 +7,14 @@ import java.util.ArrayList;
 public class Hotel {
     private ArrayList<Guest> bedroomsList;
     private ArrayList<Guest> conferenceRoomsList;
+    private int numberOfBedrooms;
+    private int numberOfConferenceRooms;
 
-    public Hotel(){
+    public Hotel(int numberOfBedrooms, int numberOfConferenceRooms){
         this.bedroomsList = new ArrayList<Guest>();
         this.conferenceRoomsList = new ArrayList<Guest>();
+        this.numberOfBedrooms = numberOfBedrooms;
+        this.numberOfConferenceRooms = numberOfConferenceRooms;
     }
 
     public void addGuestToBedroom(Guest guest){
@@ -39,6 +43,14 @@ public class Hotel {
 
     public int countConferenceRoomList(){
         return this.conferenceRoomsList.size();
+    }
+
+    public int getNumberOfBedrooms() {return this.numberOfBedrooms;}
+
+    public int getNumberOfConferenceRooms() {return this.numberOfConferenceRooms;}
+
+    public void bookRoom(Booking booking){
+
     }
 
 }
