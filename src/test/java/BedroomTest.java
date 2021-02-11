@@ -26,6 +26,11 @@ public class BedroomTest {
     }
 
     @Test
+    public void canGetRoomType(){
+        assertEquals(RoomType.TRIPLE, bedroom.getRoomType());
+    }
+
+    @Test
     public void canAddToGuestsList(){
         bedroom.addToGuestsList(guest);
         assertEquals( 1, bedroom.countGuestsList());
