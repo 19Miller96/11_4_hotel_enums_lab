@@ -10,11 +10,11 @@ public class GuestTest {
 
     @Before
     public void before(){
-        guest = new Guest("Bob");
+        guest = new Guest("Dave");
     }
 
     @Test
     public void hasName(){
-        assertEquals("Bob", guest.getName());
+        assertEquals("Dave", guest.getName());
     }
 }
