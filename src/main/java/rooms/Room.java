@@ -4,7 +4,7 @@ import guest.Guest;
 
 import java.util.ArrayList;
 
-public class Room {
+public abstract class Room {
 
     private int capacity;
     private ArrayList<Guest> guests;
@@ -25,5 +25,4 @@ public class Room {
     public void addToGuestsList(Guest guest) {
         this.guests.add(guest);
     }
-
 }
