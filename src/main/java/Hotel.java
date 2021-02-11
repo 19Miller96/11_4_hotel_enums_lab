@@ -49,8 +49,10 @@ public class Hotel {
 
     public int getNumberOfConferenceRooms() {return this.numberOfConferenceRooms;}
 
-    public void bookRoom(Booking booking){
-
+    public int bookRoom(Booking newBooking){
+        return newBooking = new Booking();
     }
+
+//            return bedroom.getNightlyRate() * booking.numberOfNightsBooke;
 
 }
